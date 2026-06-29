@@ -1,2 +1,6 @@
 python basic on day 01 with just print()
 print() = it prints output
+name = adeeb
+varaiables = name("name:",adeeb)
+also  we can do like this if we want to multiply 
+print("="*50)
