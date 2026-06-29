@@ -33,3 +33,8 @@ New Features in v0.0.3
 ✔ Interactive User Setup
 ✔ User Input
 ✔ Personalized Welcome
+
+New features in v0.0.4
+Interactive User Setup
+Study Tracker
+Daily Hour Calculator

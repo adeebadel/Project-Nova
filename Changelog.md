@@ -16,3 +16,11 @@
 - Added interactive profile setup
 - Added Interview Bot
 - Added Travel Planner
+
+## v0.0.4
+
+- Learned integers and floats
+- Learned arithmetic operators
+- Added Study Tracker
+- Built Salary Calculator
+- Built BMI Calculator

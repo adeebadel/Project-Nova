@@ -8,4 +8,8 @@ print("="*50)
 Day-03
 Learned input
 name = input("Enter your name :")
-print("Hello",name0
+print("Hello",name)
+
+Day-04
+Operators a+b etc
+float means decimal point
