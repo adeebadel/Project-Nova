@@ -10,7 +10,7 @@ Become an AI Engineer while building a production-ready application.
 
 Current Version
 
-v0.0.1
+v0.0.2
 
 Features
 
@@ -23,3 +23,7 @@ Upcoming
 - Menu System
 - Login
 - Dashboard
+
+New Features
+
+✔ User Profile using Variables

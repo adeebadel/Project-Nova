@@ -4,3 +4,8 @@
 
 - Project created
 - Welcome Screen added
+## v0.0.2
+
+- Learned Variables
+- Added User Profile
+- Added Digital ID mini project
