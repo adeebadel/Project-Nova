@@ -1,0 +1,2 @@
+python basic on day 01 with just print()
+print() = it prints output
