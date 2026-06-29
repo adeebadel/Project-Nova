@@ -38,3 +38,8 @@ New features in v0.0.4
 Interactive User Setup
 Study Tracker
 Daily Hour Calculator
+
+New features in v0.0.5
+✔ Main Menu
+✔ Decision Making
+✔ Navigation System

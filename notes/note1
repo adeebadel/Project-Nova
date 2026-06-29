@@ -13,3 +13,8 @@ print("Hello",name)
 Day-04
 Operators a+b etc
 float means decimal point
+
+Day-04
+if , else , elif
+condition >,<,>=,<=,!=,==
+you can use and experiment it with int statements 

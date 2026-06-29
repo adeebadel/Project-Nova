@@ -24,3 +24,10 @@
 - Added Study Tracker
 - Built Salary Calculator
 - Built BMI Calculator
+
+## v0.0.5
+
+- Learned if, elif, else
+- Added menu navigation
+- Built Login System
+- Built Grade Checker
