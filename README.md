@@ -43,3 +43,13 @@ New features in v0.0.5
 ✔ Main Menu
 ✔ Decision Making
 ✔ Navigation System
+
+New features in v0.0.6
+✔ Infinite Menu
+✔ While Loop
+✔ Application Flow
+
+New features in v0.0.7
+✔ Functions
+✔ Code Refactoring
+✔ Modular Design

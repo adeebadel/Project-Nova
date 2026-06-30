@@ -31,3 +31,17 @@
 - Added menu navigation
 - Built Login System
 - Built Grade Checker
+
+## v0.0.6
+
+- Learned while loops
+- Added continuous menu
+- Built ATM PIN System
+- Built Table Generator
+
+## v0.0.7
+
+- Learned functions
+- Refactored Project NOVA
+- Built Restaurant Ordering System
+- Built Function Based Calculator
