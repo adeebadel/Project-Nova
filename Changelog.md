@@ -54,3 +54,11 @@
 - Added Task Manager
 - Built Shopping List App
 - Built Movie Collection App
+
+## v0.0.9
+
+- Learned for loops
+- Learned range() and len()
+- Added task completion
+- Built Attendance Viewer
+- Built Quiz Program

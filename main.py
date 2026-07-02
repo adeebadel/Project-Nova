@@ -1,6 +1,6 @@
 # ==========================================
 # PROJECT NOVA
-# Version 0.0.8
+# Version 0.0.9
 # ==========================================
 
 tasks = []
@@ -21,13 +21,13 @@ def study_tracker():
 
     total = python_hours + math_hours + ai_hours
 
-    print("\nToday's Total:", total)
+    print("Today's Total:", total)
 
 
 def add_task():
     task = input("Enter Task: ")
     tasks.append(task)
-    print("✅ Task Added Successfully!")
+    print("✅ Task Added!")
 
 
 def view_tasks():
@@ -37,10 +37,34 @@ def view_tasks():
 
     else:
 
-        print("\n====== YOUR TASKS ======")
+        print("\n====== TASKS ======")
 
-        for i in range(len(tasks)):
-            print(i + 1, ".", tasks[i])
+        number = 1
+
+        for task in tasks:
+            print(number, ".", task)
+            number += 1
+
+
+def complete_task():
+
+    if len(tasks) == 0:
+        print("No Tasks Available!")
+        return
+
+    view_tasks()
+
+    choice = int(input("\nTask Number to Complete: "))
+
+    if 1 <= choice <= len(tasks):
+
+        completed = tasks.pop(choice - 1)
+
+        print("✅ Completed:", completed)
+
+    else:
+
+        print("Invalid Task Number!")
 
 
 print("=" * 50)
@@ -58,11 +82,13 @@ running = True
 while running:
 
     print("\n========== MAIN MENU ==========")
+
     print("1. View Profile")
     print("2. Study Tracker")
     print("3. Add Task")
     print("4. View Tasks")
-    print("5. Exit")
+    print("5. Complete Task")
+    print("6. Exit")
 
     choice = int(input("Choose: "))
 
@@ -79,6 +105,9 @@ while running:
         view_tasks()
 
     elif choice == 5:
+        complete_task()
+
+    elif choice == 6:
         print("Goodbye,", name)
         running = False
 

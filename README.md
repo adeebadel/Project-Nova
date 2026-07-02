@@ -58,3 +58,8 @@ New features in v0.0.8
 ✔ Lists
 ✔ Task Manager
 ✔ Multiple Task Storage
+
+New features in v0.0.9
+✔ for Loops
+✔ Task Completion
+✔ Cleaner Task Display
