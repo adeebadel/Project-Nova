@@ -53,3 +53,8 @@ New features in v0.0.7
 ✔ Functions
 ✔ Code Refactoring
 ✔ Modular Design
+
+New features in v0.0.8
+✔ Lists
+✔ Task Manager
+✔ Multiple Task Storage
