@@ -45,3 +45,12 @@
 - Refactored Project NOVA
 - Built Restaurant Ordering System
 - Built Function Based Calculator
+
+## v0.0.8
+
+- Learned Lists
+- Learned append()
+- Learned remove()
+- Added Task Manager
+- Built Shopping List App
+- Built Movie Collection App
