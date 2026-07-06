@@ -25,7 +25,7 @@ def study_tracker():
 
 
 def add_task():
-    task = input("Enter Task: ")
+    task = input("Enter Task: ").strip().title()
     tasks.append(task)
     print("✅ Task Added!")
 
@@ -65,6 +65,46 @@ def complete_task():
     else:
 
         print("Invalid Task Number!")
+        
+def search_task():
+
+    keyword = input("Enter task to search: ").strip().lower()
+
+    found = False
+
+    for task in tasks:
+
+        if keyword in task.lower():
+
+            print("✅ Found:", task)
+            found = True
+        if len(tasks) == 0:
+            print("No Tasks Available!")
+            return
+
+    if not found:
+        print("❌ Task not found.")
+        
+def rename_task():
+
+    if len(tasks) == 0:
+        print("No Tasks Available!")
+        return
+
+    view_tasks()
+
+    choice = int(input("Task Number: "))
+
+    if 1 <= choice <= len(tasks):
+
+        new_name = input("New Task Name: ").strip().title()
+
+        tasks[choice - 1] = new_name
+
+        print("✅ Task Renamed Successfully!")
+
+    else:
+        print("❌ Invalid Task Number!")
 
 
 print("=" * 50)
@@ -88,8 +128,9 @@ while running:
     print("3. Add Task")
     print("4. View Tasks")
     print("5. Complete Task")
-    print("6. Exit")
-
+    print("6. Search Task")
+    print("7. Rename Task")
+    print("8. Exit")
     choice = int(input("Choose: "))
 
     if choice == 1:
@@ -108,8 +149,15 @@ while running:
         complete_task()
 
     elif choice == 6:
+        search_task()
+
+    elif choice == 7:
+        rename_task()
+
+    elif choice == 8:
         print("Goodbye,", name)
         running = False
-
+    
     else:
         print("Invalid Choice!")
+        

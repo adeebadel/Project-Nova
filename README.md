@@ -63,3 +63,9 @@ New features in v0.0.9
 ✔ for Loops
 ✔ Task Completion
 ✔ Cleaner Task Display
+
+New features in v0.1.0
+✔ Search Tasks
+✔ Rename Tasks
+✔ Cleaner User Input
+✔ Better String Handling

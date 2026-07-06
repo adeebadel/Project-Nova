@@ -62,3 +62,13 @@
 - Added task completion
 - Built Attendance Viewer
 - Built Quiz Program
+
+## v0.1.0
+
+- Learned String Indexing
+- Learned String Slicing
+- Learned len()
+- Learned replace()
+- Learned find()
+- Added Rename Task
+- Improved Task Search
