@@ -79,3 +79,16 @@
 - Added profile dictionary
 - Improved profile handling
 - Built student dictionary project
+
+## v0.3.0
+
+- Converted tasks to dictionaries
+- Added task priority
+- Added task status
+- Improved task management
+
+## v0.3.1
+
+- Learned tuples
+- Added priority validation
+- Improved task creation

@@ -74,3 +74,14 @@ New features in v0.2.0
 ✔ Learned Dictionaries
 ✔ Profile Stored as Dictionary
 ✔ Better Data Organization
+
+New features in v0.3.0
+✔ Tasks now store priority
+✔ Tasks now store status
+✔ Completed tasks remain visible
+✔ Better task organization
+
+New features in v0.3.1
+✔ Learned Tuples
+✔ Added Priority Validation
+✔ Improved Task Input
