@@ -6,13 +6,13 @@
 tasks = []
 
 def show_profile():
-    print("\n========== PROFILE ==========")
-    print("Name :", name)
-    print("College :", college)
-    print("Course :", course)
-    print("Graduation :", graduation)
-    print("Dream Job :", dream_job)
 
+    print("\n========== PROFILE ==========")
+    print("Name :", profile["name"])
+    print("College :", profile["college"])
+    print("Course :", profile["course"])
+    print("Graduation :", profile["graduation"])
+    print("Dream Job :", profile["dream_job"])
 
 def study_tracker():
     python_hours = float(input("Python Hours: "))
@@ -68,6 +68,10 @@ def complete_task():
         
 def search_task():
 
+    if len(tasks) == 0:
+        print("No Tasks Available!")
+        return
+
     keyword = input("Enter task to search: ").strip().lower()
 
     found = False
@@ -78,13 +82,9 @@ def search_task():
 
             print("✅ Found:", task)
             found = True
-        if len(tasks) == 0:
-            print("No Tasks Available!")
-            return
 
     if not found:
         print("❌ Task not found.")
-        
 def rename_task():
 
     if len(tasks) == 0:
@@ -111,11 +111,13 @@ print("=" * 50)
 print("WELCOME TO PROJECT NOVA")
 print("=" * 50)
 
-name = input("Name: ")
-college = input("College: ")
-course = input("Course: ")
-graduation = input("Graduation: ")
-dream_job = input("Dream Job: ")
+profile = {
+    "name": input("Name: ").strip().title(),
+    "college": input("College: ").strip().title(),
+    "course": input("Course: ").strip().title(),
+    "graduation": input("Graduation: ").strip(),
+    "dream_job": input("Dream Job: ").strip().title()
+}
 
 running = True
 
@@ -155,7 +157,7 @@ while running:
         rename_task()
 
     elif choice == 8:
-        print("Goodbye,", name)
+        print("Goodbye,", profile["name"])
         running = False
     
     else:

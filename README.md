@@ -69,3 +69,8 @@ New features in v0.1.0
 ✔ Rename Tasks
 ✔ Cleaner User Input
 ✔ Better String Handling
+
+New features in v0.2.0
+✔ Learned Dictionaries
+✔ Profile Stored as Dictionary
+✔ Better Data Organization

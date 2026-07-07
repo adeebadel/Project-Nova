@@ -72,3 +72,10 @@
 - Learned find()
 - Added Rename Task
 - Improved Task Search
+
+## v0.2.0
+
+- Learned dictionaries
+- Added profile dictionary
+- Improved profile handling
+- Built student dictionary project
