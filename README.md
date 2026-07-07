@@ -85,3 +85,8 @@ New features in v0.3.1
 ✔ Learned Tuples
 ✔ Added Priority Validation
 ✔ Improved Task Input
+
+New features in v0.4.0
+✔ Multiple Profiles
+✔ Profile History
+✔ Profile Search

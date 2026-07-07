@@ -92,3 +92,9 @@
 - Learned tuples
 - Added priority validation
 - Improved task creation
+
+## v0.4.0
+
+- Added profile vault
+- Added profile search
+- Added multiple user support

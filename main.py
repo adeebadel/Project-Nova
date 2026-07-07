@@ -4,6 +4,7 @@
 # ==========================================
 
 tasks = []
+profiles = []
 
 
 # ==========================
@@ -134,6 +135,45 @@ def rename_task():
     else:
 
         print("❌ Invalid Task Number!")
+        
+def view_all_profiles():
+
+    if len(profiles) == 0:
+        print("No Profiles Found!")
+        return
+
+    print("\n========== ALL PROFILES ==========")
+
+    number = 1
+
+    for person in profiles:
+
+        print(number, ".", person["name"])
+        print("College :", person["college"])
+        print("Course  :", person["course"])
+        print("Dream Job :", person["dream_job"])
+        print()
+
+        number += 1
+        
+def search_profile():
+
+    keyword = input("Enter Name: ").strip().lower()
+
+    found = False
+
+    for person in profiles:
+
+        if keyword in person["name"].lower():
+
+            print("\nProfile Found")
+            print(person)
+
+            found = True
+
+    if not found:
+        print("Profile Not Found")
+        
 
 
 # ==========================
@@ -153,6 +193,7 @@ profile = {
     "dream_job": input("Dream Job: ").strip().title()
 
 }
+profiles.append(profile)
 
 running = True
 
@@ -166,7 +207,9 @@ while running:
     print("5. Complete Task")
     print("6. Search Task")
     print("7. Rename Task")
-    print("8. Exit")
+    print("8. View All Profiles")
+    print("9. Search Profile")
+    print("10. Exit")
 
     choice = int(input("\nChoose: "))
 
@@ -199,10 +242,11 @@ while running:
         rename_task()
 
     elif choice == 8:
+        view_all_profiles()
 
+    elif choice == 9:
+        search_profile()
+
+    elif choice == 10:
         print("\nGoodbye,", profile["name"])
         running = False
-
-    else:
-
-        print("❌ Invalid Choice!")
