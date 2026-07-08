@@ -2,6 +2,8 @@
 # PROJECT NOVA
 # Version 0.3.0
 # ==========================================
+#import json: used to import the json library so that we can access each dictionary
+#import random : random values will be provided for example for dice etc., and for lists and dictionaries random values from variables will be selected
 import json
 import random
 
@@ -15,7 +17,7 @@ quotes = [
     "Consistency creates success.",
     "Keep building."
 ]
-
+#try and except: are useful to cause no errors in between for example a value asks number if we put a variable it will ensure to cause no error
 try:
 
     file = open("tasks.json", "r")
@@ -31,7 +33,7 @@ except:
 # ==========================
 # FUNCTIONS
 # ==========================
-
+#from here def () function starts which defines an variable to process 
 def show_profile(profile):
 
     print("\n========== PROFILE ==========")
@@ -238,18 +240,23 @@ running = True
 
 while running:
 
-    print("\n========== MAIN MENU ==========")
-    print("1. View Profile")
-    print("2. Study Tracker")
-    print("3. Add Task")
-    print("4. View Tasks")
-    print("5. Complete Task")
-    print("6. Search Task")
-    print("7. Rename Task")
-    print("8. View All Profiles")
-    print("9. Search Profile")
-    print("10. Daily Motivation")
-    print("11. Exit")
+    print("""
+╔══════════════════════════════════════════════╗
+║              🚀 PROJECT NOVA 🚀             ║
+╠══════════════════════════════════════════════╣
+║  1. 👤 View Profile                          ║
+║  2. 📚 Study Tracker                         ║
+║  3. ➕ Add Task                              ║
+║  4. 📋 View Tasks                            ║
+║  5. ✅ Complete Task                         ║
+║  6. 🔍 Search Task                           ║
+║  7. ✏️  Rename Task                          ║
+║  8. 👥 View All Profiles                     ║
+║  9. 🔎 Search Profile                        ║
+║ 10. 💡 Daily Motivation                      ║
+║ 11. ❌ Exit                                  ║
+╚══════════════════════════════════════════════╝
+""")
     try:
         choice = int(input("\nChoose: "))
 
@@ -257,6 +264,7 @@ while running:
         print("❌ Please enter a number.")
         continue
 
+#please make sure to get all these while loops rights and these are used to choose from each value using for loops and while loops with else,elif,while,if
     if choice == 1:
 
         show_profile(profile)

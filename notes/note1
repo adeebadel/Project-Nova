@@ -54,3 +54,18 @@ Day-06
 Random import random library
 Day-07
 JSON learn a bit how to use and import stuff dump and load
+
+**BUILD DAY**
+# 🚀 Project NOVA
+A productivity terminal application built while learning Python from scratch.
+## Features
+✔ Profile Management
+✔ Study Tracker
+✔ Task Manager
+✔ Motivation Quotes
+✔ JSON Storage
+## Technologies
+Python
+JSON
+Git
+GitHub

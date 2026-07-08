@@ -133,3 +133,10 @@
 - Added json.load()
 - Migrated tasks from TXT to JSON
 - Improved data persistence
+
+## v1.1.0
+- Improved project organization
+- Enhanced menu design
+- Improved code readability
+- Added better error handling
+- Cleaned folder structure

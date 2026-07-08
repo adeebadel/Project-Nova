@@ -120,3 +120,9 @@ New features in v1.0.0
 ✔ JSON Storage
 ✔ Structured Data
 ✔ Permanent Task Storage
+
+New features in v1.1.0
+✔ Project Cleanup
+✔ Better UI
+✔ Improved Readability
+✔ Portfolio Improvements
