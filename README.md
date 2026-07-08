@@ -132,3 +132,13 @@ New features in v1.2.0
 ✔ Local Variables
 ✔ Global Variables
 ✔ Cleaner Functions
+
+New features in v1.3.0
+✔ Built-in Functions
+✔ Task Statistics
+✔ Better Task Display
+
+New features in v1.4.0
+✔ List Comprehensions
+✔ Pending Task Filter
+✔ Better Statistics

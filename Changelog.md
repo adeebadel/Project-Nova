@@ -146,3 +146,14 @@
 - Learned global variables
 - Learned variable scope
 - Improved Project NOVA functions using parameters
+
+## v1.3.0
+- Learned built-in functions
+- Improved task numbering using enumerate()
+- Added task statistics
+
+## v1.4.0
+- Learned List Comprehensions
+- Improved task statistics
+- Added pending task filter
+- Cleaner Python code

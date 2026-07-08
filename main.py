@@ -82,16 +82,13 @@ def view_tasks(tasks):
         return
 
     print("\n========== TASKS ==========")
-    number = 1
 
-    for task in tasks:
+    for number, task in enumerate(tasks, start=1):
 
         print(f"{number}. {task['name']}")
         print("Priority :", task["priority"])
         print("Status   :", task["status"])
         print()
-
-        number += 1
 
 
 def complete_task(tasks):
@@ -216,6 +213,45 @@ def motivation():
 
     print()
     print(random.choice(quotes))
+    
+def task_stats(tasks):
+
+    print("\n====== TASK STATS ======")
+
+    if len(tasks) == 0:
+        print("No tasks available.")
+        return
+
+    completed = [
+        task
+        for task in tasks
+        if task["status"] == "Completed"
+    ]
+
+    print("Total Tasks:", len(tasks))
+    print("Completed Tasks:", len(completed))
+    print("Pending Tasks:", len(tasks) - len(completed))
+    
+def pending_tasks(tasks):
+
+    print("\n====== PENDING TASKS ======")
+
+    pending = [
+        task
+        for task in tasks
+        if task["status"] == "Pending"
+    ]
+
+    if len(pending) == 0:
+        print("No pending tasks.")
+        return
+
+    for number, task in enumerate(pending, start=1):
+
+        print(f"{number}. {task['name']}")
+        print("Priority :", task["priority"])
+        print("Status   :", task["status"])
+        print()
 
 # ==========================
 # MAIN PROGRAM
@@ -241,21 +277,23 @@ running = True
 while running:
 
     print("""
-╔══════════════════════════════════════════════╗
-║              🚀 PROJECT NOVA 🚀             ║
-╠══════════════════════════════════════════════╣
-║  1. 👤 View Profile                          ║
-║  2. 📚 Study Tracker                         ║
-║  3. ➕ Add Task                              ║
-║  4. 📋 View Tasks                            ║
-║  5. ✅ Complete Task                         ║
-║  6. 🔍 Search Task                           ║
-║  7. ✏️  Rename Task                          ║
-║  8. 👥 View All Profiles                     ║
-║  9. 🔎 Search Profile                        ║
-║ 10. 💡 Daily Motivation                      ║
-║ 11. ❌ Exit                                  ║
-╚══════════════════════════════════════════════╝
+╔══════════════════════════════════════════════════════╗
+║                  🚀 PROJECT NOVA 🚀                 ║
+╠══════════════════════════════════════════════════════╣
+║  1. 👤 View Profile                                 ║
+║  2. 📚 Study Tracker                                ║
+║  3. ➕ Add Task                                     ║
+║  4. 📋 View Tasks                                   ║
+║  5. ✅ Complete Task                                ║
+║  6. 🔍 Search Task                                  ║
+║  7. ✏️ Rename Task                                  ║
+║  8. 👥 View All Profiles                            ║
+║  9. 🔎 Search Profile                               ║
+║ 10. 💡 Daily Motivation                             ║
+║ 11. 📊 Task Statistics                              ║
+║ 12. ⏳ Pending Tasks                                ║
+║ 13. ❌ Exit                                         ║
+╚══════════════════════════════════════════════════════╝
 """)
     try:
         choice = int(input("\nChoose: "))
@@ -300,10 +338,14 @@ while running:
         search_profile(profiles)
 
     elif choice == 10:
-
         motivation()
 
     elif choice == 11:
+        task_stats(tasks)
 
+    elif choice == 12:
+        pending_tasks(tasks)
+
+    elif choice == 13:
         print("\nGoodbye,", profile["name"])
         running = False
