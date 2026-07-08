@@ -152,3 +152,9 @@ New features in v1.6.0
 ✔ Learned os module
 ✔ File Checking
 ✔ Folder Creation
+
+New features in v2.0.0
+✔ Started OOP
+✔ Created Classes
+✔ Created Objects
+✔ Learned Constructors

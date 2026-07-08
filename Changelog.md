@@ -167,3 +167,10 @@
 - Learned os module
 - Added file existence checking
 - Learned folder creation
+
+## v2.0.0
+- Learned Object-Oriented Programming
+- Created first class
+- Created first object
+- Learned __init__()
+- Learned self
