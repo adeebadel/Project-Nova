@@ -25,7 +25,7 @@ file.close()
 # FUNCTIONS
 # ==========================
 
-def show_profile():
+def show_profile(profile):
 
     print("\n========== PROFILE ==========")
     print("Name :", profile["name"])
@@ -46,7 +46,7 @@ def study_tracker():
     print("\nToday's Total Study Hours:", total)
 
 
-def add_task():
+def add_task(tasks):
 
     task_name = input("Enter Task: ").strip().title()
     priority = input("Priority (High/Medium/Low): ").strip().title()
@@ -67,7 +67,7 @@ def add_task():
 
     print("✅ Task Added!")
 
-def view_tasks():
+def view_tasks(tasks):
 
     if len(tasks) == 0:
         print("No Tasks Yet!")
@@ -86,13 +86,13 @@ def view_tasks():
         number += 1
 
 
-def complete_task():
+def complete_task(tasks):
 
     if len(tasks) == 0:
         print("No Tasks Available!")
         return
 
-    view_tasks()
+    view_tasks(tasks)
     try:
         choice = int(input("\nTask Number to Complete: "))
 
@@ -106,7 +106,7 @@ def complete_task():
         print("❌ Invalid Task Number!")
 
 
-def search_task():
+def search_task(tasks):
 
     if len(tasks) == 0:
         print("No Tasks Available!")
@@ -131,13 +131,13 @@ def search_task():
         print("❌ Task Not Found")
 
 
-def rename_task():
+def rename_task(tasks):
 
     if len(tasks) == 0:
         print("No Tasks Available!")
         return
 
-    view_tasks()
+    view_tasks(tasks)
 
     try:
         choice = int(input("\nTask Number: "))
@@ -158,7 +158,7 @@ def rename_task():
 
         print("❌ Invalid Task Number!")
         
-def view_all_profiles():
+def view_all_profiles(profiles):
 
     if len(profiles) == 0:
         print("No Profiles Found!")
@@ -178,7 +178,7 @@ def view_all_profiles():
 
         number += 1
         
-def search_profile():
+def search_profile(profiles):
 
     keyword = input("Enter Name: ").strip().lower()
 
@@ -242,7 +242,7 @@ while running:
 
     if choice == 1:
 
-        show_profile()
+        show_profile(profile)
 
     elif choice == 2:
 
@@ -250,29 +250,29 @@ while running:
 
     elif choice == 3:
 
-        add_task()
+        add_task(tasks)
 
     elif choice == 4:
 
-        view_tasks()
+        view_tasks(tasks)
 
     elif choice == 5:
 
-        complete_task()
+        complete_task(tasks)
 
     elif choice == 6:
 
-        search_task()
+        search_task(tasks)
 
     elif choice == 7:
 
-        rename_task()
+        rename_task(tasks)
 
     elif choice == 8:
-        view_all_profiles()
+        view_all_profiles(profiles)
 
     elif choice == 9:
-        search_profile()
+        search_profile(profiles)
 
     elif choice == 10:
         print("\nGoodbye,", profile["name"])

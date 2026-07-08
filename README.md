@@ -105,3 +105,8 @@ New features in v0.7.0
 ✔ Learned Python Modules
 ✔ Created Custom Module
 ✔ Code Organization
+
+New features in v0.8.0
+✔ Learned Parameters
+✔ Learned Return Values
+✔ Improved Function Design

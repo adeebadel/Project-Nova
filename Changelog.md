@@ -111,7 +111,12 @@
 - Improved Project NOVA input handling
 
 ## v0.7.0
-
 - Learned Python modules
 - Imported custom functions
 - Practiced code organization
+
+## v0.8.0
+- Learned parameters
+- Learned return values
+- Refactored NOVA functions
+- Reduced dependence on global variables
