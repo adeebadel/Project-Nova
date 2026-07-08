@@ -2,7 +2,7 @@
 # PROJECT NOVA
 # Version 0.3.0
 # ==========================================
-
+import json
 import random
 
 tasks = []
@@ -16,20 +16,17 @@ quotes = [
     "Keep building."
 ]
 
-file = open("tasks.txt", "r")
+try:
 
-for line in file:
+    file = open("tasks.json", "r")
 
-    task = {
-        "name": line.strip(),
-        "priority": "Medium",
-        "status": "Pending"
-    }
+    tasks = json.load(file)
 
-    tasks.append(task)
+    file.close()
 
-file.close()
+except:
 
+    tasks = []
 
 # ==========================
 # FUNCTIONS
@@ -69,12 +66,11 @@ def add_task(tasks):
 
     tasks.append(task)
 
-    file = open("tasks.txt", "a")
+    file = open("tasks.json", "w")
 
-    file.write(task_name + "\n")
+    json.dump(tasks, file, indent=4)
 
     file.close()
-
     print("✅ Task Added!")
 
 def view_tasks(tasks):
@@ -111,6 +107,11 @@ def complete_task(tasks):
         return
     if 1 <= choice <= len(tasks):
         tasks[choice - 1]["status"] = "Completed"
+
+        file = open("tasks.json", "w")
+        json.dump(tasks, file, indent=4)
+        file.close()
+
         print("✅ Task Completed!")
     else:
         print("❌ Invalid Task Number!")
@@ -161,6 +162,9 @@ def rename_task(tasks):
         new_name = input("New Task Name: ").strip().title()
 
         tasks[choice - 1]["name"] = new_name
+        file = open("tasks.json", "w")
+        json.dump(tasks, file, indent=4)
+        file.close()
 
         print("✅ Task Renamed Successfully!")
 

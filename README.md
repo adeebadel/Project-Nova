@@ -115,3 +115,8 @@ New features in v0.9.0
 ✔ Learned random module
 ✔ Daily Motivation
 ✔ Random Quote Generator
+
+New features in v1.0.0
+✔ JSON Storage
+✔ Structured Data
+✔ Permanent Task Storage

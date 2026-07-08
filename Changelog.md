@@ -126,3 +126,10 @@
 - Used randint()
 - Used choice()
 - Added Daily Motivation to Project NOVA
+
+## v1.0.0
+- Learned JSON
+- Added json.dump()
+- Added json.load()
+- Migrated tasks from TXT to JSON
+- Improved data persistence
