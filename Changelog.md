@@ -98,3 +98,14 @@
 - Added profile vault
 - Added profile search
 - Added multiple user support
+
+## v0.5.0
+- Learned file handling
+- Added task persistence
+- Save tasks into tasks.txt
+- Load tasks automatically on startup
+
+## v0.6.0
+- Learned try and except
+- Prevented crashes from invalid input
+- Improved Project NOVA input handling

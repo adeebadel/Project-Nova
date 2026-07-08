@@ -90,3 +90,13 @@ New features in v0.4.0
 ✔ Multiple Profiles
 ✔ Profile History
 ✔ Profile Search
+
+New features in v0.5.0
+✔ File Handling
+✔ Persistent Tasks
+✔ Save Data
+
+New features in v0.6.0
+✔ Error Handling
+✔ Prevent Program Crashes
+✔ Safer User Input

@@ -6,6 +6,20 @@
 tasks = []
 profiles = []
 
+file = open("tasks.txt", "r")
+
+for line in file:
+
+    task = {
+        "name": line.strip(),
+        "priority": "Medium",
+        "status": "Pending"
+    }
+
+    tasks.append(task)
+
+file.close()
+
 
 # ==========================
 # FUNCTIONS
@@ -45,8 +59,13 @@ def add_task():
 
     tasks.append(task)
 
-    print("✅ Task Added!")
+    file = open("tasks.txt", "a")
 
+    file.write(task_name + "\n")
+
+    file.close()
+
+    print("✅ Task Added!")
 
 def view_tasks():
 
@@ -55,7 +74,6 @@ def view_tasks():
         return
 
     print("\n========== TASKS ==========")
-
     number = 1
 
     for task in tasks:
@@ -75,17 +93,16 @@ def complete_task():
         return
 
     view_tasks()
+    try:
+        choice = int(input("\nTask Number to Complete: "))
 
-    choice = int(input("\nTask Number to Complete: "))
-
+    except:
+        print("❌ Invalid Number")
+        return
     if 1 <= choice <= len(tasks):
-
         tasks[choice - 1]["status"] = "Completed"
-
         print("✅ Task Completed!")
-
     else:
-
         print("❌ Invalid Task Number!")
 
 
@@ -122,7 +139,12 @@ def rename_task():
 
     view_tasks()
 
-    choice = int(input("\nTask Number: "))
+    try:
+        choice = int(input("\nTask Number: "))
+
+    except:
+        print("❌ Invalid Number")
+        return
 
     if 1 <= choice <= len(tasks):
 
@@ -211,7 +233,12 @@ while running:
     print("9. Search Profile")
     print("10. Exit")
 
-    choice = int(input("\nChoose: "))
+    try:
+        choice = int(input("\nChoose: "))
+
+    except:
+        print("❌ Please enter a number.")
+        continue
 
     if choice == 1:
 
