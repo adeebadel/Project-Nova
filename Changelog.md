@@ -140,3 +140,9 @@
 - Improved code readability
 - Added better error handling
 - Cleaned folder structure
+
+## v1.2.0
+- Learned local variables
+- Learned global variables
+- Learned variable scope
+- Improved Project NOVA functions using parameters

@@ -126,3 +126,9 @@ New features in v1.1.0
 ✔ Better UI
 ✔ Improved Readability
 ✔ Portfolio Improvements
+
+New features in v1.2.0
+✔ Learned Variable Scope
+✔ Local Variables
+✔ Global Variables
+✔ Cleaner Functions
