@@ -157,3 +157,8 @@
 - Improved task statistics
 - Added pending task filter
 - Cleaner Python code
+
+## v1.5.0
+- Learned datetime module
+- Added timestamps to tasks
+- Improved task display

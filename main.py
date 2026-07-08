@@ -6,7 +6,7 @@
 #import random : random values will be provided for example for dice etc., and for lists and dictionaries random values from variables will be selected
 import json
 import random
-
+from datetime import datetime
 tasks = []
 profiles = []
 
@@ -61,10 +61,11 @@ def add_task(tasks):
     priority = input("Priority (High/Medium/Low): ").strip().title()
 
     task = {
-        "name": task_name,
-        "priority": priority,
-        "status": "Pending"
-    }
+    "name": task_name,
+    "priority": priority,
+    "status": "Pending",
+    "created": datetime.now().strftime("%d-%m-%Y %I:%M %p")
+}
 
     tasks.append(task)
 
@@ -88,6 +89,7 @@ def view_tasks(tasks):
         print(f"{number}. {task['name']}")
         print("Priority :", task["priority"])
         print("Status   :", task["status"])
+        print("Created  :", task.get("created", "Unknown"))
         print()
 
 

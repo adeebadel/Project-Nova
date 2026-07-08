@@ -142,3 +142,8 @@ New features in v1.4.0
 ✔ List Comprehensions
 ✔ Pending Task Filter
 ✔ Better Statistics
+
+New features in v1.5.0
+✔ Datetime Module
+✔ Task Creation Timestamp
+✔ Better Task Information
