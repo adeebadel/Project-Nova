@@ -3,8 +3,18 @@
 # Version 0.3.0
 # ==========================================
 
+import random
+
 tasks = []
 profiles = []
+
+quotes = [
+    "Discipline beats motivation.",
+    "Small progress every day.",
+    "One bug at a time.",
+    "Consistency creates success.",
+    "Keep building."
+]
 
 file = open("tasks.txt", "r")
 
@@ -196,7 +206,10 @@ def search_profile(profiles):
     if not found:
         print("Profile Not Found")
         
+def motivation():
 
+    print()
+    print(random.choice(quotes))
 
 # ==========================
 # MAIN PROGRAM
@@ -231,8 +244,8 @@ while running:
     print("7. Rename Task")
     print("8. View All Profiles")
     print("9. Search Profile")
-    print("10. Exit")
-
+    print("10. Daily Motivation")
+    print("11. Exit")
     try:
         choice = int(input("\nChoose: "))
 
@@ -275,5 +288,10 @@ while running:
         search_profile(profiles)
 
     elif choice == 10:
+
+        motivation()
+
+    elif choice == 11:
+
         print("\nGoodbye,", profile["name"])
         running = False

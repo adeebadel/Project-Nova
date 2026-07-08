@@ -120,3 +120,9 @@
 - Learned return values
 - Refactored NOVA functions
 - Reduced dependence on global variables
+
+## v0.9.0
+- Learned Python random module
+- Used randint()
+- Used choice()
+- Added Daily Motivation to Project NOVA

@@ -110,3 +110,8 @@ New features in v0.8.0
 ✔ Learned Parameters
 ✔ Learned Return Values
 ✔ Improved Function Design
+
+New features in v0.9.0
+✔ Learned random module
+✔ Daily Motivation
+✔ Random Quote Generator
