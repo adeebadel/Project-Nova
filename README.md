@@ -147,3 +147,8 @@ New features in v1.5.0
 ✔ Datetime Module
 ✔ Task Creation Timestamp
 ✔ Better Task Information
+
+New features in v1.6.0
+✔ Learned os module
+✔ File Checking
+✔ Folder Creation

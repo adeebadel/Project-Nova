@@ -7,6 +7,9 @@
 import json
 import random
 from datetime import datetime
+import os
+
+
 tasks = []
 profiles = []
 
@@ -18,7 +21,7 @@ quotes = [
     "Keep building."
 ]
 #try and except: are useful to cause no errors in between for example a value asks number if we put a variable it will ensure to cause no error
-try:
+if os.path.exists("tasks.json"):
 
     file = open("tasks.json", "r")
 
@@ -26,10 +29,9 @@ try:
 
     file.close()
 
-except:
+else:
 
     tasks = []
-
 # ==========================
 # FUNCTIONS
 # ==========================
@@ -262,6 +264,9 @@ def pending_tasks(tasks):
 print("=" * 50)
 print("WELCOME TO PROJECT NOVA")
 print("=" * 50)
+
+print("Current Folder:")
+print(os.getcwd())
 
 profile = {
 

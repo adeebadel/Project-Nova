@@ -162,3 +162,8 @@
 - Learned datetime module
 - Added timestamps to tasks
 - Improved task display
+
+## v1.6.0
+- Learned os module
+- Added file existence checking
+- Learned folder creation
