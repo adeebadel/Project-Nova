@@ -109,3 +109,9 @@
 - Learned try and except
 - Prevented crashes from invalid input
 - Improved Project NOVA input handling
+
+## v0.7.0
+
+- Learned Python modules
+- Imported custom functions
+- Practiced code organization

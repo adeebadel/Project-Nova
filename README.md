@@ -100,3 +100,8 @@ New features in v0.6.0
 ✔ Error Handling
 ✔ Prevent Program Crashes
 ✔ Safer User Input
+
+New features in v0.7.0
+✔ Learned Python Modules
+✔ Created Custom Module
+✔ Code Organization
