@@ -158,3 +158,8 @@ New features in v2.0.0
 ✔ Created Classes
 ✔ Created Objects
 ✔ Learned Constructors
+
+New features in v2.1.0
+✔ Instance Methods
+✔ Updating Objects
+✔ Better OOP Practice

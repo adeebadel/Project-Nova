@@ -174,3 +174,8 @@
 - Created first object
 - Learned __init__()
 - Learned self
+
+## v2.1.0
+- Learned instance methods
+- Updated object attributes
+- Practiced object interaction
